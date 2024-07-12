@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <header>
+        <img src="img/logo2.png" alt="" id="img_logo">
+        <h1>CONTACTANOS</h1>
+
+    </header>
+
+    <nav>
+        <a href="index.html" style="color: aqua; ">HOME</a>
+    
+        <a href="contacto.html" style="color: aqua; ">CONTACTO</a>
+    
+        <a href="productos.html" style="color: aqua; ">PRODUCTOS</a>
+    
+    </nav>
+
+
+
+
+
+
+    <form action="datosContacto.html" method="get" id="f">
+
+        <!-- primeros campos -->
+        <input type="text" name="nombre" id="nombre" placeholder="*nombre" required>
+        <input type="text" name="apellido" id="apellido" placeholder="*apellido" required>
+        <input type="email" name="email" id="email" placeholder="*correo electronico" required>
+        <input type="text" name="telf" id="telf" placeholder="Numero de telf" pattern="[0-9]{9}">
+        <!-- fin de primeros campos -->
+
+        <br>
+
+
+        <!-- inicio srevicios extras checkbox -->
+        <div class="checkbox">
+
+            <p style="color: black; font-weight: bolder;">SERVICIOS EXTRAS</p>
+
+            <input type="checkbox" name="garantia" id="garantia">
+            <label for="garantia" style="color: beige;">Garantia adicional</label>
+
+            <br>
+
+            <input type="checkbox" name="xpress" id="xpress">
+            <label for="xpress" style="color: beige;">Servicio Xpress</label>
+
+            <br>
+
+            <input type="checkbox" name="contador" id="contador">
+            <label for="contador" style="color: white;">Contador DeLuxe</label>
+
+        </div>
+        <!-- fin de srevicios extras checkbox -->
+
+
+        <br>
+
+
+        <!-- inicio radio forma pago -->
+        <div class="forma_pago">
+
+            <p style="color: black; font-weight: bolder;">FORMA DE PAGO</p>
+
+            <input type="radio" name="pago" value="bizzum" id="bizzum">
+            <label for="bizzum" style="color: beige;">BIZZUM</label>
+
+            <br>
+
+            <input type="radio" name="pago" value="efectivo" id="efectivo">
+            <label for="efectivo" style="color: beige;">EFECTIVO</label>
+
+            <br>
+
+            <input type="radio" name="pago" value="transfer" id="transfer">
+            <label for="transfer" style="color: beige;">TRANSFER</label>
+
+        </div>
+        <!-- fin radio forma pago -->
+
+
+        <br>
+
+
+        <!-- inicio provincias desplegable -->
+        <div class="provincias">
+            <select name="provincia" id="provincia">
+                <option value="null">Elige provincia</option>
+
+                <option value="Barcelona">Barcelona</option>
+                <option value="Tarragona">Tarragona</option>
+                <option value="Lleida">Lleida</option>
+                <option value="Gerona">Gerona</option>
+            </select>
+        </div>
+        <!-- fin de provincias desplegable -->
+
+
+        <br>
+
+
+        <textarea name="comentarios" id="comentarios" maxlength="200" form="f">Comentarios?</textarea>
+
+
+        <br>
+
+
+        <input type="submit">
+  </form>
+
+  <footer>
+    <h2>
+        ESTO ES MI FOOTER , NO ME DA LA VIDA PARA MAS
+    </h2>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
