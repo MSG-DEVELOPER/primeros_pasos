@@ -1,0 +1,21 @@
+C:\Users\IFCD0110.CETPENEDES\Documents>doskey /history
+dir
+cd..
+cd users
+cd IFCD0110.CETPENEDES
+cd documents
+mkdir prova
+dir
+move holamundo.html prova
+dir
+cd prova
+dir
+ren holamundo.html adiosmundo.html
+dir
+move adiosmundo.html documentos
+cd..
+dir
+del prova
+s
+dir
+doskey /history
